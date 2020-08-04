@@ -1,0 +1,10 @@
+{% extends 'common.html' %}
+{% block anisha %}
+    {% for x in data %}
+    <tr><th>
+         <a href="{% url 'openmovie' %}?id={{ x }}"></a>
+           {{ x }}
+           </a>
+           </th></tr>
+    {% endfor %}
+{% endblock %}
